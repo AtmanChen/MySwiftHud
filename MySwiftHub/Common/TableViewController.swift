@@ -7,24 +7,86 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import KafkaRefresh
+import DZNEmptyDataSet
+import SnapKit
 
-class TableViewController: UIViewController {
+class TableViewController: UIViewController, UIScrollViewDelegate {
+    
+    let headerRefreshTrigger = PublishSubject<Void>()
+    let footerRefreshTrigger = PublishSubject<Void>()
+    
+    let isHeaderLoading = BehaviorRelay(value: false)
+    let isFooterLoading = BehaviorRelay(value: false)
+    
+    lazy var tableView: TableView = {
+        let view = TableView(frame: CGRect(), style: .plain)
+        view.emptyDataSetSource = self as? DZNEmptyDataSetSource
+        view.emptyDataSetDelegate = self as? DZNEmptyDataSetDelegate
+        view.rx.setDelegate(self).disposed(by: rx.disposeBag)
+        return view
+    }()
+    
+    var clearsSelectionOnViewWillAppear = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        makeUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func makeUI() {
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+        tableView.bindGlobalStyle(forHeadRefreshHandler: { [weak self] in
+            guard let self = self else {
+                return
+            }
+            if self.tableView.headRefreshControl.isTriggeredRefreshByUser == false {
+                self.headerRefreshTrigger.onNext(())
+            }
+        })
+        
+        tableView.bindGlobalStyle(forFootRefreshHandler: { [weak self] in
+            self?.footerRefreshTrigger.onNext(())
+        })
+        
+        isHeaderLoading.bind(to: tableView.headRefreshControl.rx.isAnimating).disposed(by: rx.disposeBag)
+        isFooterLoading.bind(to: tableView.footRefreshControl.rx.isAnimating).disposed(by: rx.disposeBag)
+        
+        tableView.footRefreshControl.autoRefreshOnFoot = true
+        
+        
     }
-    */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if clearsSelectionOnViewWillAppear {
+            deselectSelectedRow()
+        }
+    }
+    
+    
+    
 
+}
+
+extension TableViewController {
+    func deselectSelectedRow() {
+        if let selectedIndexPaths = tableView.indexPathsForSelectedRows {
+            selectedIndexPaths.forEach {
+                tableView.deselectRow(at: $0, animated: false)
+            }
+        }
+    }
+}
+
+
+extension TableViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        
+    }
 }

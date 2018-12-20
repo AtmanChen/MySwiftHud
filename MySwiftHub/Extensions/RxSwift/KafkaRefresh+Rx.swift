@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
+import KafkaRefresh
+
+extension Reactive where Base: KafkaRefreshControl {
+    public var isAnimating: Binder<Bool> {
+        return Binder(self.base) { refreshControl, active in
+            if active {
+                refreshControl.beginRefreshing()
+            } else {
+                refreshControl.endRefreshing()
+            }
+        }
+    }
+}

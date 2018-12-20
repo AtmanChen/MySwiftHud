@@ -7,15 +7,37 @@
 //
 
 import UIKit
+import NSObject_Rx
 
 class TableView: UITableView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    init() {
+        super.init(frame: .init(), style: .grouped)
     }
-    */
-
+    
+    override init(frame: CGRect, style: UITableView.Style) {
+        super.init(frame: frame, style: style)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    func makeUI() {
+        rowHeight = UITableView.automaticDimension
+        estimatedRowHeight = 50
+        sectionHeaderHeight = 40
+        backgroundColor = .clear
+        cellLayoutMarginsFollowReadableWidth = false
+        keyboardDismissMode = .onDrag
+        separatorInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
+//        tableHeaderView =
+        tableFooterView = UIView()
+        
+        themeService.rx
+            .bind({ $0.separatorColor }, to: rx.separatorColor)
+            .disposed(by: rx.disposeBag)
+        
+    }
+    
 }

@@ -1,0 +1,369 @@
+PODS:
+  - AcknowList (1.8)
+  - Alamofire (4.8.0)
+  - AttributedLib (2.2.0)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Swift (3.4.2):
+    - CocoaLumberjack/Default
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - DateToolsSwift (4.0.0)
+  - Differentiator (3.1.0)
+  - DZNEmptyDataSet (1.8.1)
+  - Fabric (1.9.0)
+  - Firebase/Analytics (5.15.0):
+    - Firebase/Core
+  - Firebase/Core (5.15.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.4.0)
+  - Firebase/CoreOnly (5.15.0):
+    - FirebaseCore (= 5.1.10)
+  - FirebaseAnalytics (5.4.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.3)
+    - GoogleAppMeasurement (= 5.4.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.1.10):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.3.0):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
+  - FLEX (2.4.0)
+  - GoogleAppMeasurement (5.4.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleUtilities/AppDelegateSwizzler (5.3.6):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.3.6)
+  - GoogleUtilities/Logger (5.3.6):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.3.6):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.3.6):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.3.6)"
+  - GoogleUtilities/Reachability (5.3.6):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.3.6):
+    - GoogleUtilities/Logger
+  - Hero (1.4.0)
+  - ImageSlideshow/Core (1.7.0)
+  - ImageSlideshow/Kingfisher (1.7.0):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
+  - IQKeyboardManagerSwift (6.2.0)
+  - KafkaRefresh (1.2.3):
+    - KafkaRefresh/Category (= 1.2.3)
+    - KafkaRefresh/Configuration (= 1.2.3)
+    - KafkaRefresh/Core (= 1.2.3)
+    - KafkaRefresh/Default (= 1.2.3)
+    - KafkaRefresh/Style (= 1.2.3)
+    - KafkaRefresh/UIKit (= 1.2.3)
+  - KafkaRefresh/Category (1.2.3)
+  - KafkaRefresh/Configuration (1.2.3):
+    - KafkaRefresh/UIKit/FootKit
+    - KafkaRefresh/UIKit/HeadKit
+  - KafkaRefresh/Core (1.2.3):
+    - KafkaRefresh/Category
+  - KafkaRefresh/Default (1.2.3):
+    - KafkaRefresh/Style
+  - KafkaRefresh/Style (1.2.3)
+  - KafkaRefresh/UIKit (1.2.3):
+    - KafkaRefresh/UIKit/FootKit (= 1.2.3)
+    - KafkaRefresh/UIKit/HeadKit (= 1.2.3)
+    - KafkaRefresh/UIKit/LayerKit (= 1.2.3)
+  - KafkaRefresh/UIKit/FootKit (1.2.3):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Core
+    - KafkaRefresh/Default
+    - KafkaRefresh/Style
+    - KafkaRefresh/UIKit/LayerKit
+  - KafkaRefresh/UIKit/HeadKit (1.2.3):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Core
+    - KafkaRefresh/Default
+    - KafkaRefresh/Style
+    - KafkaRefresh/UIKit/LayerKit
+  - KafkaRefresh/UIKit/LayerKit (1.2.3):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Default
+  - KeychainAccess (3.1.2)
+  - Kingfisher (4.10.1)
+  - Localize-Swift (2.0.0)
+  - Mixpanel (3.3.7)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya-ObjectMapper/Core (2.7):
+    - Moya (~> 12)
+    - ObjectMapper (~> 3.3)
+  - Moya-ObjectMapper/RxSwift (2.7):
+    - Moya-ObjectMapper/Core
+    - RxSwift (~> 4.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - Moya/RxSwift (12.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - "NSObject+Rx (4.4.1)":
+    - RxSwift (~> 4.3)
+  - NVActivityIndicatorView (4.4.1):
+    - NVActivityIndicatorView/Presenter (= 4.4.1)
+  - NVActivityIndicatorView/Presenter (4.4.1)
+  - ObjectMapper (3.4.1)
+  - PMAlertController (3.5.0)
+  - R.swift (5.0.0):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.0)
+  - RAMAnimatedTabBarController (4.0.1)
+  - ReachabilitySwift (4.3.0)
+  - Result (4.0.0)
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxGesture (2.1.0):
+    - RxCocoa (~> 4.4.0)
+    - RxSwift (~> 4.4.0)
+  - RxOptional (3.6.2):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
+  - RxSwiftExt (3.4.0):
+    - RxSwiftExt/Core (= 3.4.0)
+    - RxSwiftExt/RxCocoa (= 3.4.0)
+  - RxSwiftExt/Core (3.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwiftExt/RxCocoa (3.4.0):
+    - RxCocoa (~> 4.0)
+    - RxSwiftExt/Core
+  - RxTheme (2.2.1):
+    - RxCocoa (~> 4.3)
+    - RxSwift (~> 4.3)
+  - RxViewController (0.4.0):
+    - RxCocoa (>= 4.0.0)
+    - RxSwift (>= 4.0.0)
+  - SnapKit (4.2.0)
+  - SwiftDate (5.0.13)
+  - SwifterSwift (4.6.0):
+    - SwifterSwift/AppKit (= 4.6.0)
+    - SwifterSwift/CoreGraphics (= 4.6.0)
+    - SwifterSwift/CoreLocation (= 4.6.0)
+    - SwifterSwift/Foundation (= 4.6.0)
+    - SwifterSwift/MapKit (= 4.6.0)
+    - SwifterSwift/SpriteKit (= 4.6.0)
+    - SwifterSwift/SwiftStdlib (= 4.6.0)
+    - SwifterSwift/UIKit (= 4.6.0)
+  - SwifterSwift/AppKit (4.6.0)
+  - SwifterSwift/CoreGraphics (4.6.0)
+  - SwifterSwift/CoreLocation (4.6.0)
+  - SwifterSwift/Foundation (4.6.0)
+  - SwifterSwift/MapKit (4.6.0)
+  - SwifterSwift/SpriteKit (4.6.0)
+  - SwifterSwift/SwiftStdlib (4.6.0)
+  - SwifterSwift/UIKit (4.6.0)
+  - SwiftLint (0.29.1)
+  - Umbrella/Core (0.8.0)
+  - Umbrella/Firebase (0.8.0):
+    - Umbrella/Core
+  - Umbrella/Mixpanel (0.8.0):
+    - Umbrella/Core
+  - WhatsNewKit (1.1.5)
+
+DEPENDENCIES:
+  - AcknowList (~> 1.8)
+  - AttributedLib (from `https://github.com/Nirma/Attributed.git`)
+  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
+  - CocoaLumberjack/Swift (~> 3.0)
+  - Crashlytics
+  - DateToolsSwift (~> 4.0)
+  - DZNEmptyDataSet (~> 1.0)
+  - Fabric
+  - Firebase/Analytics
+  - FLEX (from `https://github.com/Flipboard/FLEX.git`)
+  - Hero (~> 1.4.0)
+  - ImageSlideshow/Kingfisher (~> 1.0)
+  - IQKeyboardManagerSwift (~> 6.0)
+  - KafkaRefresh (~> 1.0)
+  - KeychainAccess (~> 3.0)
+  - Kingfisher (~> 4.0)
+  - Localize-Swift (~> 2.0)
+  - Mixpanel (~> 3.0)
+  - Moya-ObjectMapper/RxSwift (from `https://github.com/hankbao/Moya-ObjectMapper.git`)
+  - Moya/RxSwift (~> 12.0)
+  - "NSObject+Rx (~> 4.0)"
+  - NVActivityIndicatorView (~> 4.0)
+  - PMAlertController (~> 3.5.0)
+  - R.swift (~> 5.0.0)
+  - RAMAnimatedTabBarController (~> 4.0.1)
+  - ReachabilitySwift (~> 4.0)
+  - RxDataSources (~> 3.0)
+  - RxGesture (~> 2.0)
+  - RxOptional (~> 3.0)
+  - RxSwiftExt (~> 3.0)
+  - RxTheme (~> 2.0)
+  - RxViewController (~> 0.3)
+  - SnapKit (~> 4.0)
+  - SwiftDate (~> 5.0)
+  - SwifterSwift (~> 4.6.0)
+  - SwiftLint (= 0.29.1)
+  - Umbrella/Firebase
+  - Umbrella/Mixpanel (~> 0.8)
+  - WhatsNewKit (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AcknowList
+    - Alamofire
+    - CocoaLumberjack
+    - Crashlytics
+    - DateToolsSwift
+    - Differentiator
+    - DZNEmptyDataSet
+    - Fabric
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - Hero
+    - ImageSlideshow
+    - IQKeyboardManagerSwift
+    - KafkaRefresh
+    - KeychainAccess
+    - Kingfisher
+    - Localize-Swift
+    - Mixpanel
+    - Moya
+    - nanopb
+    - "NSObject+Rx"
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - PMAlertController
+    - R.swift
+    - R.swift.Library
+    - RAMAnimatedTabBarController
+    - ReachabilitySwift
+    - Result
+    - RxAtomic
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxOptional
+    - RxSwift
+    - RxSwiftExt
+    - RxTheme
+    - RxViewController
+    - SnapKit
+    - SwiftDate
+    - SwifterSwift
+    - SwiftLint
+    - Umbrella
+    - WhatsNewKit
+
+EXTERNAL SOURCES:
+  AttributedLib:
+    :git: https://github.com/Nirma/Attributed.git
+  ChameleonFramework:
+    :git: https://github.com/ViccAlexander/Chameleon.git
+  FLEX:
+    :git: https://github.com/Flipboard/FLEX.git
+  Moya-ObjectMapper:
+    :git: https://github.com/hankbao/Moya-ObjectMapper.git
+
+CHECKOUT OPTIONS:
+  AttributedLib:
+    :commit: 1f1050a665b764b5fb9848431fd9214475c3f8b4
+    :git: https://github.com/Nirma/Attributed.git
+  ChameleonFramework:
+    :commit: 6dd284bde21ea2e7f9fd89bc36f40df16e16369d
+    :git: https://github.com/ViccAlexander/Chameleon.git
+  FLEX:
+    :commit: b64cd37ec6d920ac18d5cbe18b4667cbe85a9f3a
+    :git: https://github.com/Flipboard/FLEX.git
+  Moya-ObjectMapper:
+    :commit: d3f711972efd16035cc3ce10ba4078ef24a1c622
+    :git: https://github.com/hankbao/Moya-ObjectMapper.git
+
+SPEC CHECKSUMS:
+  AcknowList: 5b8820004d019d0a8d6a091ea2392dcb54bd3ad2
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  AttributedLib: e640bc5b5a5a76bdfa708f5bb2d1f5a18a7b77ed
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  DateToolsSwift: 875d97ff9e3a5d54abdd67a269b3f51c757b71ab
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  Firebase: 8bb9268bff82374f2cbaaabb143e725743c316ae
+  FirebaseAnalytics: c06f9d70577d79074214700a71fd5d39de5550fb
+  FirebaseCore: 35747502d9e8c6ee217385ad04446c7c2aaf9c5c
+  FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  GoogleAppMeasurement: 98b71f5e04142793729a5ef23e5b96651ff4b70f
+  GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  ImageSlideshow: f8eec5e37a980f60923b585ff23b0e140fd24018
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  KafkaRefresh: c9794c5a696eaf00371c18ba385c8c3d114b5bff
+  KeychainAccess: b3816fddcf28aa29d94b10ec305cd52be14c472b
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+  Mixpanel: 1e94d1d29dfc3d3c66f734d10e29ad86420889fe
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Moya-ObjectMapper: 4af618191346bc395625510eff5684ed4a8246c6
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
+  NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
+  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
+  PMAlertController: 06dab8160066fc4ce991c880e3722cd403e2926a
+  R.swift: f88c7d7d48a2be4dffa132dde1b3d389620310eb
+  R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
+  RAMAnimatedTabBarController: 677d6f7ec7e88b1089486f4db49b0a5067e8ad1c
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxGesture: 7f6dfb45dbde06e618c24442d38493e3144f2c95
+  RxOptional: 80426a0ddbd092573e4c482d8cc13302078c4d5e
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  RxSwiftExt: 01f8ecbeeb355698e9c75365ebe908b00dacf45d
+  RxTheme: eda0b738169766e96b91c8cb685788fe9b8b6722
+  RxViewController: 359bbc2fda373a78605b2735afb0f9f4f3f6c3e4
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftDate: f4aea5fa9dee812485f34041121a4cbde01b0dee
+  SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
+  SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
+  Umbrella: 57ac5e3e0bb68cadd913fc70c776681818f7212c
+  WhatsNewKit: 4b1adc0955248667324120e98cd7640e01483b0a
+
+PODFILE CHECKSUM: 09d5fdfb8eea0607ea11fc92fc60dda700ab48d7
+
+COCOAPODS: 1.5.3

@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+
+protocol Navigatable {
+    var navigator: Navigator! { get set }
+}
+
+
+class Navigator {
+    
+    static var `default` = Navigator()
+    
+    
+    
+}
